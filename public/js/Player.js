@@ -16,15 +16,15 @@ export default class Player {
 
     setPosition (jsonPosition) {
         if (this.id == jsonPosition.id) {
-            this.move (jsonPosition)
-            // this.playerCube.position.x = jsonPosition.posx;
-            // this.playerCube.position.y = jsonPosition.posy;
-            // this.playerCube.position.z = jsonPosition.posz;
+            //this.move (jsonPosition)
+            this.playerCube.position.x = jsonPosition.posx;
+            this.playerCube.position.y = jsonPosition.posy;
+            this.playerCube.position.z = jsonPosition.posz;
         }
     }
 
     move (json) {
-        if (json == undefined) {
+        if (json != undefined) {
             this.playerCube.move ({
                 x: json.posx,
                 y: json.posy,

@@ -35,7 +35,7 @@ class PlayerServer {
     }
 
     pressKeys (keys) {
-        this.speed = 500;
+        this.speed = 5;
 
         this.vx = 0;
         this.vy = 0;
