@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Cubes</title>
+
+    <link rel="stylesheet" href="css/master.css">
+    <script src="assets/jquery-3.5.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="lib/babylon.max.js"></script>
+    <script type="module" src="js/init.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="div-canvas">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+        
+        <div id="div-chat">
+            <div id="get-name">
+                <label for="name">Votre nom :</label>
+                <input id="prompt-name" name="name" type="text">
+                <button id="validation-name">Valider</button>
+            </div>
+            <div id="chat">
+                <div id="container-chat"></div>
+                <div id="input-chat">
+                    <input class="prompt-command" id="prompt-command" type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
